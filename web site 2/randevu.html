@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu Al</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input, select, button {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0003b3;
+        }
+    </style>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+   
+
+    <div class="container">
+        <h2>Randevu Al</h2>
+        <form action="#" method="POST">
+            <label for="name">Ad-Soyad:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Posta:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" pattern="\d{11}" title="Telefon numarası 11 haneli olmalıdır" required>
+
+            <label for="date">Tarih:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Saat:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="fortune">Fal Türü:</label>
+            <select id="fortune" name="fortune" required>
+                <option value="" disabled selected>Seçiniz...</option>
+                <option value="tarot">Tarot Fali</option>
+                <option value="kahve">Kahve Fali</option>
+                <option value="el">El Fali</option>
+                <option value="astroloji">Astroloji Yorumu</option>
+            </select>
+            
+            <button type="submit">Randevu Al</button>
+        </form>
+    </div>
+</body>
+</html>
